@@ -1,0 +1,879 @@
+:root{
+    --primary:#378C3F ;
+    --secondary:#fe8800;
+    --light:#f5f5f5;
+    --dark:#14141f;
+}
+
+body{
+    background-color:rgb(230, 227, 227)!important ;
+}
+
+.video-fluid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media(min-aspect-ratio:16/9){
+    .video-carousel{
+         margin-top: -380px;
+        }
+    .video-fluid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .video-fluid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1300px){
+    #video-carousel{
+        margin-top: -4px ;
+    } 
+}
+@media screen and (max-width: 1200px){
+    #video-carousel{
+        margin-top: -60px ;
+    } 
+}
+@media screen and (max-width: 1100px){
+    #video-carousel{
+        margin-top: -120px ;
+    } 
+}
+@media screen and (max-width: 1000px){
+    #video-carousel{
+        margin-top: -180px ;
+    } 
+}
+@media screen and (max-width: 900px){
+    #video-carousel{
+        margin-top: -200px ;
+    } 
+    .carousel-control-prev-icon{
+        visibility: hidden;
+    }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 800px){
+    #video-carousel{
+        margin-top: -260px ;
+    }
+    .carousel-control-prev-icon{
+        visibility: hidden;
+    }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 700px){
+    #video-carousel{
+        margin-top: -320px ;
+    }
+}
+@media screen and (max-width: 600px){
+    #video-carousel{
+        margin-top: -360px ;
+    }
+}
+@media screen and (max-width: 500px){
+    #video-carousel{
+        margin-top: -420px ;
+    }
+     #video-carousel h1{
+        display: none ;
+    }  
+}
+@media screen and (max-width: 400px){
+    #video-carousel{
+        margin-top: -470px ;
+    }
+     #video-carousel h1{
+        display: none ;
+    }  
+}
+@media screen and (max-width: 300px){
+    #video-carousel{
+        margin-top: -520px ;
+    } 
+    #video-carousel h1{
+        display: none ;
+    } 
+}
+/*hero header*/
+.hero-header{
+    background: url(../img/homepage/view_1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;background-size: 100% 100%;
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+.hero-header-sl-places{
+    background:  url(../img/homepage/view_2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;background-size: 100% 100%;
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+.hero-header-sl-thing{
+    background:  url(../img/homepage/view_3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;background-size: 100% 100%;
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+.hero-header-balloining{
+    background:  url(../img/homepage/view_4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;background-size: 100% 100%;
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+
+
+
+@keyframes slide{
+    0%{
+        background-image: url(../img/homepage/view_1.jpg);
+    }
+    24%{
+        background-image: url(../img/homepage/view_2.jpg);
+    }
+    49%{
+        background-image: url(../img/homepage/view_3.jpg);
+    }
+    73%{
+        background-image: url(../img/homepage/view_4.jpg);
+    }
+}
+/*services*/
+.service-item{
+    box-shadow: 0 0 45px rgb(194, 188, 188);
+    transition: 0.5s;
+}
+.service-item:hover{
+    background: var(--primary);
+}
+.service-item *{
+    transition: 0.5s;
+}
+.service-item:hover *{
+    color: var(--light) !important;
+}
+
+/*services*/
+.destination img{
+    transition: 0.5s;
+}
+.destination a:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*destination car*/
+#header{
+    background: url(../img/view_1.jpg) top/cover no-repeat;
+}
+#caroimg{
+    background: url(../img/view_2.jpg) top/cover no-repeat;
+}
+#birdwatching{
+    background: url(../img/view_3.jpg) top/cover no-repeat !important;
+}
+#header .des-btn, #caroimg .des-btn, #birdwatching .des-btn {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+#header .des-btn:hover, #caroimg .des-btn:hover, #birdwatching .des-btn:hover{
+    background-color: #86b817;
+    color: #fff;
+    border-color: #86b817;
+}
+.title h2::before{
+    position: absolute;;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: #86b817;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*destination card*/
+.des-card .des-btn{
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.des-card .des-btn:hover{
+    background-color: #86b817;
+    color: #fff;
+    border-color: #86b817;
+}
+.des-card .active-filter-btn{
+    background-color: #86b817;
+    color: #fff;
+    border-color: #86b817;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.filter-button-group .btn:hover{
+    color: #fff !important;
+}
+
+
+
+/*sri lanka card*/
+.item-container{
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.image-container, .body-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.image-container img{
+    width: 100%;
+    height: 350px;
+}
+.body-container{
+    position: relative;
+}
+.overplay{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    opacity: 0;
+    background-color: rgba(24, 83, 122, 0.6);
+    transition: height linear 0.4s, opacity linear 0.2s;
+}
+.item-container:hover{
+    border: 2px solid black;
+}
+.item-container:hover .overplay{
+    opacity: 1;
+    height: 150px;
+}
+.event-info{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title, .price{
+    color: #18537a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;   
+}
+.info{
+    letter-spacing: 0.5px;
+    margin-bottom: -14px;
+}
+.separator{
+    width: 20%;
+    height: 6px;
+    background-color: #17537a;
+    /*margin-bottom: 16px;*/
+}
+.additiona-info{
+    border-top: 1px solid #bbb;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+.additiona-info .info{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.info i{
+    color: #18537a;
+    font-size: 1.1rem;
+    margin-right: 4px;
+}
+.info span{
+    color: #18537a;
+    font-weight: bolder;
+}
+.action{
+    color: #fff!important;
+    border: 3px solid #fff;
+    background-color: transparent;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+}
+.item-container:hover .action{
+    top: 50px;
+}
+.action:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.descard_srilanka .nav-item .nav-link.active{
+    background-color: var(--primary)!important;
+    color: white!important;
+}
+
+/*world card*/
+.world-card{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #b8a8a8;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+.world-card::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 80%;
+    background: #395e3e;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.world-card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.world-card::after{
+    content: "Traveling";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, 0.1);
+}
+.world-card::after:hover{
+    border: 2px solid #000;
+}
+.world-card .imgbox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    z-index: 1;
+}
+.pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.world-card .contentbox{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    z-index: 2;
+}
+.world-card .contentbox h3{
+    font-size: 24px!important;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px!important;
+    line-height:0px!important; 
+      
+}
+.world-card .btn-action{
+    position: absolute;
+    width: 20px;
+    align-items: center;
+    margin-left: 20px;    
+    opacity: 0;
+    transition: .5s;
+}
+
+.world-card:hover .btn-action{
+    margin-top: -400px;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer!important;
+}
+.world-card .contentbox .wprice{
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.world-card .contentbox .book{
+    position: relative;
+    top: 100px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.world-card:hover .contentbox .book{
+    top: -20px;
+    opacity: 1;
+}
+.world-card:hover .contentbox .book:hover{
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.15);
+    background-color: var(--primary);
+}
+
+
+@media screen and (max-width: 770px){
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    } 
+    .wrapper .card{
+        width: 100%;
+    } 
+}
+
+
+
+
+
+.popup{
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.openpopup{
+    z-index: 1100;
+    position: fixed;
+    background: transparent;
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.package-item {
+    transition: .5s;
+  }
+  
+  .package-item:hover {
+    box-shadow: 0 0 30px #CCCCCC;
+  }
+
+
+
+.product-item {
+    padding: 30px;
+}
+
+.product-item .btn-action {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.product-item:hover .btn-action {
+    bottom: -20px;
+    opacity: 1;
+}
+
+
+
+/*go to top*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 11;
+    border-radius: 50%;
+  }
+
+
+
+  .ftco-section a{
+    text-decoration: none;
+  }
+  .ftco-destination .owl-carousel .owl-stage-outer {
+      padding-bottom: 2em;
+      position: relative;
+  }
+
+  .destination {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      
+  }
+
+  @media (max-width: 991.98px) {
+      .destination {
+          margin-bottom: 30px;
+      }
+  }
+
+  .destination .img {
+      display: block;
+      width: 100%;
+      height: 300px;
+  }
+
+  .destination .icon {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      opacity: 0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+
+  .destination .icon span {
+      color: #000000;
+  }
+
+  .destination:hover .icon {
+      opacity: 1;
+  }
+
+  .destination .text {
+      border: 1px solid #e6e6e6;
+      border-top: 1px solid transparent;
+      background: #fff;
+  }
+
+  .destination .text h3 {
+      font-size: 18px;
+  }
+
+  .destination .text h3 a {
+      color: #000000;
+      text-decoration: none;
+  }
+
+  .destination .text span.listing {
+      font-size: 14px;
+  }
+
+  .destination .text .rate i {
+      font-size: 10px;
+      color: #f85959;
+  }
+
+  .destination .text .rate span {
+      padding-left: 5px;
+      font-size: 10px;
+  }
+
+  .destination .text .one {
+      width: calc(100% - 130px);
+  }
+
+  .destination a,.destination .text .one a{
+    color: #000!important;
+    text-decoration: none!important;
+  }
+
+  .destination .text .two {
+      width: 130px;
+      text-align: right;
+  }
+
+  .destination .text .two .price {
+      font-weight: 400;
+      font-size: 18px;
+      color: #2f89fc;
+  }
+
+  .destination .text .two .per-price {
+      font-size: 20px;
+      line-height: 1.4;
+  }
+
+  .destination .text .two .per-price small {
+      font-size: 12px;
+  }
+
+  .destination .text .days span {
+      font-size: 13px;
+      color: black;
+  }
+
+  .destination .text .bottom-area {
+      margin-bottom: 0;
+  }
+
+  .destination .text .bottom-area span {
+      font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+      .destination .text .bottom-area span:last-child {
+          margin-left: 5px;
+      }
+  }
+
+  .destination .text .bottom-area span:last-child a {
+      background: #378C3F;
+      text-decoration: none;
+      color: #fff;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      padding: 3px 5px;
+  }
+
+  .destination .text .bottom-area span:last-child a:hover {
+      background: #8bc34a;
+      color: #fff;
+  }
+
+
+  /*sri lanka tour pakage item card*/
+.destination-item img {
+    transition: .5s;
+  }
+  
+  .destination-item:hover img {
+    transform: scale(1.3);
+  }
+  
+  .destination-overlay {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: .5s;
+    z-index: 1;
+  }
+  
+  .destination-item:hover .destination-overlay {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-width: 30px;
+  }
+  
+
+  /*sri lanka tour package search box*/
+  .search-container .search-box {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #FFF;
+    padding: 30px 15px;
+    margin-top:-80px
+}
+  .search-container .search-box .btn{
+    margin-top:-5px;
+  }
+
+
+/*world wide pack registration*/
+.bg-registration {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/worldtour/view_1.jpg), no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+
+/*about team*/
+.team-item {
+    transition: .5s;
+  }
+  
+  .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+  }
+  
+  .team-social a.btn {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    opacity: 0;
+  }
+  
+  .team-item:hover {
+    box-shadow: 0 0 30px #CCCCCC;
+  }
+  
+  .team-item:hover .team-social {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .team-item:hover .team-social a.btn:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+  }
+  .team-item:hover .team-social a.btn:hover{    
+    color: #fff;
+    background-color: #378C3F;
+  }
+
+  .team-item:hover .team-social a.btn:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .05s;
+  }
+  
+  .team-item:hover .team-social a.btn:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+  }
+  
+  .team-item:hover .team-social a.btn:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .15s;
+  }
+  
+  .team-item .team-img img {
+    transition: .5s;
+  }
+  
+  .team-item:hover .team-img img {
+    transform: scale(1.2);
+  }
+
+
+  .about .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff!important;
+    background-color: #378C3F!important;
+}
+
+
+
+.blog {
+    padding: 40px;
+    background-color: #FBFBFB; }
+  
+  @media screen and (max-width: 990px) {
+    .blog {
+      padding: 0px 10px; } }
+  @media screen and (max-width: 1199px) {
+    .blog .container {
+      max-width: 100%; } }
+  .blog .blog-singe {
+    box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-bottom: 30px;
+margin-right: 10px; }
+  
+  .blog .blog-singe .blog-img-tab {
+    padding: 0px; }
+    .blog .blog-singe .blog-img-tab img {
+      width: 100%; }
+  
+  .blog .blog-singe .blog-content-tab {
+    padding: 15px; }
+  
+  .blog .blog-singe .blog-content-tab h2 {
+    font-size: 19px; }
+  
+  .blog .blog-singe .blog-content-tab i {
+    margin-right: 10px;
+    font-size: 12px; }
+  
+  .blog .blog-singe .blog-content-tab i small {
+    margin-left: 5px;
+    font-size: 100%; }
+  
+  .blog .blog-singe .blog-content-tab .blog-desic {
+    margin-top: 8px;
+    font-size: 12px;
+    text-indent: 20px;
+    margin-bottom: 10px; }
+  
+  .blog .blog-singe .blog-content-tab a {
+    color: #06b2b6;
+    font-size: 12px; }
+  
+  .blog .blog-singe .blog-content-tab a i {
+    margin-left: 15px;
+    font-size: 13px; }
+  
+  .blog-row {
+    margin-top: 20px; }

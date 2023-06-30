@@ -1,0 +1,222 @@
+
+
+.infomation{
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.tab-content .hotel-box{    
+    text-align: left;
+    background: #fff;
+    display: block;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease-in-out;
+}
+.tab-content .hotel-box a{
+    text-decoration: none!important;
+}
+.tab-content .hotel-box:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.tab-content article{
+    display: block;
+}
+.tab-content figure{
+    margin: 0;
+}
+.tab-content{
+    text-decoration: none;
+}
+.tab-content img{
+    width: 100%;
+    height: 200px;
+}
+.tab-content .quick-destination img{
+    width: 100%;
+    height: 100%;
+}
+
+article .details{
+    padding: 12px 15px;
+}  
+article .details .price{
+    color: #7db921;
+    font-size: 1.6667em;
+    text-transform: uppercase;
+    float: right;
+    text-align: right;
+    line-height: 1;
+    display: block;
+}
+article .details .price small{
+    display: block;
+    color: #838383;
+    font-size: 0.5em;
+}
+.details .box-title{
+    margin: 0;
+    color: #2d3e52;
+}
+.details .box-title p{
+    margin: 0;
+}
+.details .box-title small{
+    margin: 0;
+    font-size: 15px;
+    color: #838383;
+    text-transform: uppercase;
+    display: block;
+    
+}
+.details .feedback{
+    margin: 5px 0;
+    border-top: 1px solid #f5f5f5;
+    padding-top: 5px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.feedback .five-star-container{
+    display: inline-block;
+    position: relative;
+    font-family: 'Glyphicons Halflings';
+    font-size: 14px;
+    text-align: left;
+    cursor: default;
+    white-space: nowrap;
+    line-height: 1.2em;
+}
+.five-star-container .five-stars{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding-left: 1px;
+    color: rgb(223, 191, 11);
+}
+.feedback .review{
+    display: block;
+    position: relative;
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.8333em;
+    color: #9e9e9e;
+}
+.feedback .review .button{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.2em;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: -5px;
+}
+
+
+  
+
+
+/*right card*/
+ .right-card{
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease-in-out;
+}
+ .right-card:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}  
+ .right-card .btn-ex{
+    display: flex;
+    font-size: 1em;
+    height: 70px;
+    width: 100%;
+    padding: 0px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #030303;
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0;
+    table-layout: fixed;
+}
+ .right-card .btn-ex i{
+    font-size: 40px;
+    margin: 15px;
+}
+
+ .right-card .desti{
+    border: 1px solid #7db921;
+}
+ .right-card .btn-ex .des-desti{
+    background-color: #7db921;
+    width: 25%;
+}
+.btn-ex .desti-af {
+    border-bottom-color: #7db921;
+    border-bottom: 70px solid #7db921;
+    border-right: 16px solid transparent;
+}
+.right-card .destination{
+    border: 1px solid #7db921;
+}
+ .right-card .btn-ex .des-destination{
+    background-color: #7db921;
+    width: 25%;
+}
+.btn-ex .destination-af {
+    border-bottom-color: #7db921;
+    border-bottom: 70px solid #7db921;
+    border-right: 16px solid transparent;
+}
+
+ .right-card .activies{
+    border: 1px solid #372aee;
+}
+ .right-card .btn-ex .des-activies{
+    background-color: #372aee;
+    width: 25%;
+}
+.btn-ex .activies-af {
+    border-bottom-color: #372aee;
+    border-bottom: 70px solid #372aee;
+    border-right: 16px solid transparent;
+}
+
+ .right-card .photo{
+    border: 1px solid #d68d1e;
+}
+ .right-card .btn-ex .des-photo{
+    background-color: #d68d1e;
+    width: 25%;
+}
+.btn-ex .photo-af {
+    border-bottom-color: #d68d1e;
+    border-bottom: 70px solid #d68d1e;
+    border-right: 16px solid transparent;
+}
+
+ .right-card .package{
+    border: 1px solid #e622e6;
+}
+ .right-card .btn-ex .des-package{
+    background-color: #e622e6;
+    width: 25%;
+}
+.btn-ex .package-af {
+    border-bottom-color: #e622e6;
+    border-bottom: 70px solid #e622e6;
+    border-right: 16px solid transparent;
+}
+
+
+.image-container img{
+    width: 100%;
+    height: 350px;
+}
